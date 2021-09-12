@@ -1,0 +1,13 @@
+{% extends '@FaraDataFileManager/base.html.twig' %}
+
+{% block title %}Edit Gallery{% endblock %}
+
+{% block body %}
+    <h1>Edit Gallery</h1>
+
+    {{ include('@FaraDataFileManager/gallery/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('file_manager_gallery_index') }}">back to list</a>
+
+    {{ include('@FaraDataFileManager/gallery/_delete_form.html.twig') }}
+{% endblock %}

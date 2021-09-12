@@ -1,0 +1,30 @@
+services:
+#    fara_data_file_manager.example:
+#        class: FaraData\FileManagerBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+#    //ToDo check it and enable it
+#	file_type_extension:
+#        class: FaraData\FileManagerBundle\Twig\FileTypeExtension
+#        tags:
+#            - { name: twig.extension }
+#        arguments: ['@file_type_service']
+#        public: true
+    faradata_media:
+        class: FaraData\FileManagerBundle\Repository\MediaRepository
+        factory: ["@doctrine", getRepository]
+        arguments:
+            - FaraDataFileManagerBundle:Media
+    faradata_tag:
+        class: FaraData\FileManagerBundle\Repository\TagRepository
+        factory: ["@doctrine", getRepository]
+        arguments:
+            - FaraDataFileManagerBundle:Tag
+    faradata_gallery:
+        class: FaraData\FileManagerBundle\Repository\GalleryRepository
+        factory: ["@doctrine", getRepository]
+        arguments:
+            - FaraDataFileManagerBundle:Gallery
+    file_type_service:
+        class: FaraData\FileManagerBundle\Service\FileTypeService
+        arguments: ['@router']
+        public: true

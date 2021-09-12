@@ -1,0 +1,3 @@
+interactive:
+    resource: "@FaraDataFileManagerBundle/Controller"
+    type:     annotation
