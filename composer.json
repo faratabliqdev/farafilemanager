@@ -25,7 +25,7 @@
     "symfony/twig-bundle": "^2.3.4|~3.0|^4.0",
     "symfony/twig-bridge": "^2.3.4|~3.0|^4.0",
     "symfony/asset": "~2.3|~3.0|^4.0",
-    "oomphinc/composer-installers-extender": "^1.1",
+    "oomphinc/composer-installers-extender": "^2.0.1",
     "friendsofsymfony/jsrouting-bundle": "^1.6|^2.0",
     "sg/datatablesbundle": "^1.1.1| dev-master",
     "tetranz/select2entity-bundle": "2.5.1"
